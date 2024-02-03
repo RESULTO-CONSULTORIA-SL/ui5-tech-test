@@ -1,0 +1,44 @@
+<mvc:View
+	controllerName="com.resulto.ui5techtest.controller.Details"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:c="sap.ui.core"
+	displayBlock="true"
+	height="100%"
+	busyIndicatorDelay="0"
+>
+	<Page id="detailsPage" title="{i18n>detailsTitle}">
+		<content>
+			<Panel id="detailsPanel" headerText="{i18n>detailsPanelTitle}" expandable="true" expanded="true">
+				<content>
+					<VBox>
+						<items>
+							<Label text="{i18n>productID}" />
+							<Text text="{ProductID}" />
+							<Label text="{i18n>productName}" />
+							<Text text="{ProductName}" />
+							<Label text="{i18n>supplierID}" />
+							<Text text="{SupplierID}" />
+							<Label text="{i18n>categoryID}" />
+							<Text text="{CategoryID}" />
+							<Label text="{i18n>quantityPerUnit}" />
+							<Text text="{QuantityPerUnit}" />
+							<Label text="{i18n>unitPrice}" />
+							<Text text="{UnitPrice}" />
+							<Label text="{i18n>unitsInStock}" />
+							<Text text="{UnitsInStock}" />
+							<Label text="{i18n>unitsOnOrder}" />
+							<Text text="{UnitsOnOrder}" />
+							<Label text="{i18n>reorderLevel}" />
+							<Text text="{ReorderLevel}" />
+							<Label text="{i18n>discontinued}" />
+							<Text text="{Discontinued}" />
+						</items>
+					</VBox>
+				</content>
+			</Panel>
+		</content>
+		
+	</Page>
+
+</mvc:View>

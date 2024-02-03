@@ -1,0 +1,20 @@
+<mvc:View  xmlns:smarttable="sap.ui.comp.smarttable"
+    xmlns:smartfilterbar="sap.ui.comp.smartfilterbar"
+    controllerName="com.resulto.ui5techtest.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <smartfilterbar:SmartFilterBar id="_IDGenSmartFilterBar1" entitySet="Products">
+                <smartfilterbar:controlConfiguration></smartfilterbar:controlConfiguration>
+            </smartfilterbar:SmartFilterBar>
+            <smarttable:SmartTable id="_IDGenSmartTable1" entitySet="Products"
+                smartFilterId="_IDGenSmartFilterBar1" tableType="ResponsiveTable">
+                <Table id="innerUi5Table" growing="true" mode="SingleSelectMaster" selectionChange=".onListItemPress">
+                    <ColumnListItem highlight="{= ${UnitInStock} === 0 ? 'Error' : 'None'}"/>
+                </Table>
+
+            </smarttable:SmartTable>
+        </content>
+    </Page>
+</mvc:View>
